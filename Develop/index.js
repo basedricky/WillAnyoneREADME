@@ -1,21 +1,16 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
-const generateMarkdown = require('.utils/generateMarkdown.js');
-
-const writeFileAsync = util.promisify(fs.writeFile);
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 console.log('Welcome to README Generator: 2021')
-
-
-
 
 // array of questions for user
 const questions = [
     {
         type: 'input',
         name: 'githubUsername',
-        message: 'Please enter your GitHub username.',
+        message: 'Please enter your GitHub username No @ necessary.',
         default: 'basedricky',
         validate: function (answer) {
             if (answer.length < 1) {
@@ -38,7 +33,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'projectName',
+        name: 'projectTitle',
         message: 'What is the title of your project?',
         default: 'WillAnyoneReadMe',
         validate: function (answer) {
@@ -77,7 +72,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'testInstructions',
+        name: 'testsUsed',
         message: 'Please prove any applicable test instructions/infromation.'
     },
     {
@@ -113,13 +108,13 @@ async function init() {
     try {
 
         // Prompt Inquirer questions
-        const userResponses = await inquirer.prompt(questions);
-        console.log("Your responses: ", userResponses);
+        const responses = await inquirer.prompt(questions);
+        console.log("Your responses: ", responses);
         console.log("Thank you for your responses! Verifying user input.");
 
         // Pass response information into our markdown function
         console.log("Generating README file.....")
-        const markdown = generateMarkdown(userResponses, userInfo);
+        const markdown = generateMarkdown(responses, info);
         console.log(markdown);
 
         // Write markdown to file
