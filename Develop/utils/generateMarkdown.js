@@ -101,26 +101,23 @@ function generateMarkdown(responses) {
   };
 
   // Questions / About Developer section
-  let moreQuestions =
-    `
-  ---
-  
+  if (responses.githubUsername !== '') {
+
+    markDown += `
+   
   ## Questions?
    
-  For any questions, concerns, or public shamings, please contact me with the information below:
+  *For any questions, concerns, or public shamings, please contact me with the information below:*
  
-  GitHub: [@${responses.githubUsername}](www.github.com/${responses.githubUsername})
-  
-  
-  Email: ${responses.emailAddress}
+  *GitHub: [@${responses.githubUsername}](www.github.com/${responses.githubUsername})*
+    
+  *Email: ${responses.emailAddress}*
   `;
 
-  // Add developer section to markdown
-  markDown += moreQuestions;
+    // Return markdown
+    return markDown;
 
-  // Return markdown
-  return markDown;
-
+  };
 };
 
 module.exports = generateMarkdown;

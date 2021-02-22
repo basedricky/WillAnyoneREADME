@@ -7,7 +7,7 @@
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  TEST
+  Insert project Description here
 
   
   ## Table of Contents
@@ -33,33 +33,31 @@
   
   *Steps needed to install and run the application:*
   
-  TEST
+  NA
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  TEST
+  NA
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  TEST
+  NA
   
   ## Contributions
   
   *Please credit any contributors or cited sources here.*
   
-  TEST
-  ---
-  
+  there were multiple contributors
+   
   ## Questions?
    
-  For any questions, concerns, or public shamings, please contact me with the information below:
+  *For any questions, concerns, or public shamings, please contact me with the information below:*
  
-  GitHub: [@basedricky](www.github.com/basedricky)
-  
-  
-  Email: ricky@dragonflyut.com
+  *GitHub: [@basedricky](www.github.com/basedricky)*
+    
+  *Email: ricky@dragonflyut.com*
   
