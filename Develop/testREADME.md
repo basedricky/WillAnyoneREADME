@@ -7,15 +7,20 @@
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  The purpose of this project was to further broaden my understanding of node.js
+  This project was created to broaden my understanding of node.js. I created a simple README generator, that uses node.js and inquirer. user input is received via the command line and input is used to generate a README
   
   ## Table of Contents
  
   * [Description](#description)
+
   * [Licenses](#licenses)  
-  * [Installation](#instructions)  
+
+  * [Installation](#installation)  
+
   * [Usage](#usage)
+
   * [Contributions](#contributions)  
+
   * [Tests](#tests)
   
   ## License
@@ -27,19 +32,19 @@
   
   *Steps needed to install and run the application:*
   
-  "npm install inquirer" must be ran in bash prior to "node index.js"
+  "npm install inquirer" will be ran prior to "node index.js"
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  The application is inteded to be used to gauge my aptitude and understanding of node.js
+  The application was inteded to be used to gauge my aptitude with node.js
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  The application is inteded to be used to gauge my aptitude and understanding of node.js
+  No tests were written for this particular application.
   
   ## Contributions
   
@@ -56,7 +61,10 @@
   
   
   Email: ricky@dragonflyut.com
-  
-  ## Screen recording
+
+  ## Video Upload URL
 
   https://youtu.be/BlBY2xQ12BM
+
+
+  

@@ -13,17 +13,24 @@ function generateMarkdown(responses) {
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
   ${responses.projectDescription}
+
   
   `
   markDown +=
 
+
     `## Table of Contents
  
   * [Description](#description)
+
   * [Licenses](#licenses)  
-  * [Installation](#instructions)  
+
+  * [Installation](#installation)  
+
   * [Usage](#usage)
+
   * [Contributions](#contributions)  
+
   * [Tests](#tests)`
 
   // License information to be used dependening on user choice
@@ -77,7 +84,7 @@ function generateMarkdown(responses) {
   
   *The following test/testing methods were used in development with this application:*
   
-  ${responses.usageInformation}`
+  ${responses.testsUsed}`
   };
 
 
