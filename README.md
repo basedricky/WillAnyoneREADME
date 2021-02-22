@@ -57,7 +57,7 @@
    
   For any questions, concerns, or public shamings, please contact me with the information below:
  
-  GitHub: [@basedricky](www.github.com/basedricky)
+  *GitHub: www.github.com/basedricky*
   
   
   Email: ricky@dragonflyut.com

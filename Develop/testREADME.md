@@ -7,7 +7,7 @@
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  The purpose of this project was to showcase my understanding of node.js
+  The purpose of this project as to expand my knowledge of node.js and how to run application from terminal
 
   
   ## Table of Contents
@@ -33,31 +33,31 @@
   
   *Steps needed to install and run the application:*
   
-  "npm install inquirer" must be ran in terminal prior to "node index.js"
+  "npm install inquirer" must be ran prior to "node index.js"
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  This application was meant to be used to generate a basic README based on user input and using node.js
+  This was intended to be used to generate a readme from the command line using user input and inquirer
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  No tests were written for this specific application.
+  No tests were written for this particular application
   
   ## Contributions
   
   *Please credit any contributors or cited sources here.*
   
-  "this page: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba was referenced for License Images"
+  https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba was referenced for Markdown License images.
    
   ## Questions?
    
   *For any questions, concerns, or public shamings, please contact me with the information below:*
  
-  *GitHub: [@basedricky](www.github.com/basedricky)*
+  *GitHub: www.github.com/basedricky*
     
   *Email: ricky@dragonflyut.com*
   
