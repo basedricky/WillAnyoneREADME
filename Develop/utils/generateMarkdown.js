@@ -1,70 +1,46 @@
 // function to generate markdown for README
 var licenseUsed = ''
 
-function generateMarkdown(responses, info) {
+function generateMarkdown(responses) {
 
-  let tableofContents = `## Table of Contents`;
-
-  if (responses.projectDescription !== '') {
-    tableofContents += `
-  [Description](#projectDescription)`   };
-
-  if (responses.installationInstructions !== '') {
-    tableofContents += `
-  [Installation](#installationInstructions)`  };
-
-  if (responses.usageInformation !== '') {
-    tableofContents = + `
-  [Usage](#usageInformation)` };
-
-  if (responses.contributionGuidelines !== '') {
-    tableofContents += `
-  [Contributions](#contributionGuidelines)`  };
-
-  if (responses.licenseInformation = '') {
-    tableofContents = + `
-  [Licenses](#licenseInformation)`  };
-
-  if (responses.testsUsed !== '') {
-    tableofContents += `
-  [Contributions](#testsUsed)`  };
-
-
-
-  // License information to be used dependening on user choice
-  if (responses.licenseInformation = 'MIT License') {
-    license === `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-  }
-  else if (responses.licenseInformation = 'GNU GPL v3') {
-    license === `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
-  }
-  else if (responses.licenseInformation = 'Apache License 2.0') {
-    license === `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-  };
-
-
-  // markdown for the remainder of the readme
-
-  let markDown =
-    `# ${responses.projectTitle}
+  let markDown = `
+  
+  # ${responses.projectTitle}
   
 
   ## Description
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  ${responses.projectDescription}`
+  ${responses.projectDescription}
+  
+  `
+  markDown +=
 
-  markDown = + tableofContents;
-
-
-  // License section is required
+    `## Table of Contents
+ 
+  * [Description](#description)  
+  * [Installation](#instructions)  
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Licenses](#licenses)
+  * [Tests](#tests)`
+  // License information to be used dependening on user choice
+  if (responses.licenseInformation = 'MIT License') {
+    licenseUsed = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  }
+  else if (responses.licenseInformation = 'GNU GPL v3') {
+    licenseUsed = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+  }
+  else if (responses.licenseInformation = 'Apache License 2.0') {
+    licenseUsed == `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+  };
   markDown +=
     `
   
   ## License
   
-  ${licenseUsed}
+  * ${licenseUsed}
   `;
 
   // Installation
@@ -106,12 +82,12 @@ function generateMarkdown(responses, info) {
 
   // Contributing
   if (responses.contributionGuidelines !== '') {
-    `
+
+    markDown += `
   
   ## Contributions
   
-  *If you would like to contribute to this project, please adhere to the following guidelines
-  and best practices.*
+  *Please credit any contributors or cited sources here.*
   
   ${responses.contributionGuidelines}`
   };
@@ -123,12 +99,12 @@ function generateMarkdown(responses, info) {
   
   ## Questions?
    
-  For any questions, concerns, or public shamings, please contact me at the information below:
+  For any questions, concerns, or public shamings, please contact me with the information below:
  
-  GitHub: [@${info.login}](www.github.com/${info.login})
+  GitHub: [@${responses.githubUsername}](www.github.com/${responses.githubUsername})
   
   
-  Email: ${info.emailAddress}
+  Email: ${responses.emailAddress}
   `;
 
   // Add developer section to markdown

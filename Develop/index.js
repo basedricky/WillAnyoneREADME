@@ -58,22 +58,46 @@ const questions = [
     {
         type: 'input',
         name: 'installationInstructions',
-        message: 'If applicable, please provide installation instructions for your project.'
+        message: 'If applicable, please provide installation instructions for your project.',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("User input is required");
+            }
+            return true;
+        },
     },
     {
         type: 'input',
         name: 'usageInformation',
-        message: 'What is the inteded usage information?'
+        message: 'What is the inteded usage information?',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("User input is required");
+            }
+            return true;
+        },
     },
     {
         type: 'input',
         name: 'contributionGuidelines',
-        message: 'Please provide any applicable contribution Guidelines.'
+        message: 'Please list any applicable contributors to this project.',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("User input is required");
+            }
+            return true;
+        },
     },
     {
         type: 'input',
         name: 'testsUsed',
-        message: 'Please prove any applicable test instructions/infromation.'
+        message: 'Please prove any applicable test instructions/infromation.',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log("User input is required");
+            }
+            return true;
+        },
     },
     {
         type: 'list',
@@ -114,7 +138,7 @@ async function init() {
 
         // Pass response information into our markdown function
         console.log("Generating README file.....")
-        const markdown = generateMarkdown(responses, info);
+        const markdown = generateMarkdown(responses);
         console.log(markdown);
 
         // Write markdown to file
