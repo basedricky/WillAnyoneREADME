@@ -1,21 +1,21 @@
 
   
-  # WillAnyoneReadMe
+  # Will Anyone README?
   
 
   ## Description
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  Insert project Description here
+  The purpose of this project was to further broaden my understanding of node.js
   
   ## Table of Contents
  
-  * [Description](#description)  
+  * [Description](#description)
+  * [Licenses](#licenses)  
   * [Installation](#instructions)  
   * [Usage](#usage)
-  * [Contributions](#contributions)
-  * [Licenses](#licenses)
+  * [Contributions](#contributions)  
   * [Tests](#tests)
   
   ## License
@@ -27,25 +27,25 @@
   
   *Steps needed to install and run the application:*
   
-  a
+  "npm install inquirer" must be ran in bash prior to "node index.js"
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  b
+  The application is inteded to be used to gauge my aptitude and understanding of node.js
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  b
+  The application is inteded to be used to gauge my aptitude and understanding of node.js
   
   ## Contributions
   
   *Please credit any contributors or cited sources here.*
   
-  c
+  https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba was referenced for Markdown License images.
   ---
   
   ## Questions?
@@ -57,3 +57,6 @@
   
   Email: ricky@dragonflyut.com
   
+  ## Screen recording
+
+  https://youtu.be/BlBY2xQ12BM

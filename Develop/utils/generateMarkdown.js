@@ -19,12 +19,13 @@ function generateMarkdown(responses) {
 
     `## Table of Contents
  
-  * [Description](#description)  
+  * [Description](#description)
+  * [Licenses](#licenses)  
   * [Installation](#instructions)  
   * [Usage](#usage)
-  * [Contributions](#contributions)
-  * [Licenses](#licenses)
+  * [Contributions](#contributions)  
   * [Tests](#tests)`
+
   // License information to be used dependening on user choice
   if (responses.licenseInformation = 'MIT License') {
     licenseUsed = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
