@@ -27,11 +27,11 @@ function generateMarkdown(responses) {
 
   * [Installation](#installation)  
 
-  * [Usage](#usage)
+  * [Usage](#usage)  
 
-  * [Contributions](#contributions)  
-
-  * [Tests](#tests)`
+  * [Tests](#tests)
+  
+  * [Contributions](#contributions)`
 
   // License information to be used dependening on user choice
   if (responses.licenseInformation = 'MIT License') {

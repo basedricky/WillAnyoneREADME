@@ -104,15 +104,8 @@ const questions = [
         name: 'licenseInformation',
         message: 'Please select any liceneses used for this project.',
         choices: ['MIT License', 'GNU GPL v3', 'Apache License 2.0'],
-
-
-
-
-
     },
 ];
-
-
 
 // function to write README file
 function writeToFile(fileName, data) {
