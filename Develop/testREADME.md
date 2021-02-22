@@ -1,13 +1,13 @@
 
   
-  # WillAnyoneReadMe
+  # Will Anyone README
   
 
   ## Description
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  Insert project Description here
+  The purpose of this project was to showcase my understanding of node.js
 
   
   ## Table of Contents
@@ -33,25 +33,25 @@
   
   *Steps needed to install and run the application:*
   
-  NA
+  "npm install inquirer" must be ran in terminal prior to "node index.js"
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  NA
+  This application was meant to be used to generate a basic README based on user input and using node.js
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  NA
+  No tests were written for this specific application.
   
   ## Contributions
   
   *Please credit any contributors or cited sources here.*
   
-  there were multiple contributors
+  "this page: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba was referenced for License Images"
    
   ## Questions?
    
