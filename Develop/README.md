@@ -1,13 +1,13 @@
 
   
-  # Will Anyone README
+  # EmployWEEEEEEEEEE
   
 
   ## Description
 
   *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
 
-  The purpose of this project as to expand my knowledge of node.js and how to run application from terminal
+  The purpose of this project was to create a simple CLI app that will allow you to view all employees by role, department, in total, and updating employees by role.
 
   
   ## Table of Contents
@@ -33,31 +33,31 @@
   
   *Steps needed to install and run the application:*
   
-  "npm install inquirer" must be ran prior to "node index.js"
+  Run `npm install` to install dependencies. run `schema.sql in MYSQLWorkBench` Make sure to update  your connection information.
   
   ## Usage 
   
   *Instructions and potential use cases:*
   
-  This was intended to be used to generate a readme from the command line using user input and inquirer
+  Run `node index.js` to start the application. Use your keyboard to select the various options.
   
   ## Tests 
   
   *The following test/testing methods were used in development with this application:*
   
-  No tests were written for this particular application
+  NA
   
   ## Contributions
   
   *Please credit any contributors or cited sources here.*
   
-  https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba was referenced for Markdown License images.
+  github, w3schools, stack overflow.
    
   ## Questions?
    
   *For any questions, concerns, or public shamings, please contact me with the information below:*
  
-  *GitHub: www.github.com/basedricky*
+  GitHub: www.github.com/basedricky
     
-  *Email: ricky@dragonflyut.com*
+  Email: ricky@dragonflyut.com
   

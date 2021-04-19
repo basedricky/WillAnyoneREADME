@@ -109,9 +109,9 @@ function generateMarkdown(responses) {
    
   *For any questions, concerns, or public shamings, please contact me with the information below:*
  
-  *GitHub: www.github.com/${responses.githubUsername}*
+  GitHub: www.github.com/${responses.githubUsername}
     
-  *Email: ${responses.emailAddress}*
+  Email: ${responses.emailAddress}
   `;
 
     // Return markdown
